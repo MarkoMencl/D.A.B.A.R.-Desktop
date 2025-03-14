@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="PresentationLayer.UcFavorites"
+             xmlns:res="clr-namespace:PresentationLayer.Resources"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <Grid Background="#FFFFFF" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="{x:Static res:Strings.YourFavoriteAds}"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Foreground="#008080"
+                       HorizontalAlignment="Center"
+                       Margin="0,10,0,20"/>
+
+            <ItemsControl x:Name="FavoritesItemsControl" Grid.Row="1" Margin="10">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="#4aa5a5" BorderThickness="2" Margin="5" Padding="10" CornerRadius="10" Background="White"
+                                MouseLeftButtonUp="OnFavoriteItemClick" Tag="{Binding Id}" Cursor="Hand">
+                            <StackPanel Width="200" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                <Grid Height="150" VerticalAlignment="Top" ClipToBounds="True">
+                                    <Image Source="{Binding ImageSource}" Stretch="Uniform" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Grid>
+                                <TextBlock Text="{Binding Title}" FontWeight="Bold" Margin="0,5,0,0" TextWrapping="Wrap" Foreground="#000000" FontSize="14" HorizontalAlignment="Center" MinHeight="40"/>
+                                <TextBlock Text="{Binding Description}" TextWrapping="Wrap" FontSize="12" Foreground="Gray" TextAlignment="Center" MinHeight="40"/>
+                                <Button Content="{x:Static res:Strings.Remove}" Width="160" Margin="5,10,5,0"
+                                        Background="#D9534F" Foreground="White"
+                                        BorderBrush="Transparent" Tag="{Binding Id}" 
+                                        Click="RemoveFromFavorites_Click" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

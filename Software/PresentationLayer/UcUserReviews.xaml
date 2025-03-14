@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="PresentationLayer.UcUserReviews"
+             xmlns:res="clr-namespace:PresentationLayer.Resources"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PresentationLayer"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="1440">
+    <!-- Izradio: Marko Mencl -->
+
+    <Grid Margin="10">
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontFamily" Value="Segoe UI"/>
+                <Setter Property="Margin" Value="0,20,0,20"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+        </Grid.Resources>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="{x:Static res:Strings.ReceivedReviews}" Grid.Column="0" Grid.Row="0"/>
+        <ScrollViewer Grid.Column="0" Grid.Row="1" x:Name="scrlReceivedReviews" VerticalScrollBarVisibility="Hidden">
+            <StackPanel x:Name="stpReceivedReviews"></StackPanel>
+        </ScrollViewer>
+
+        <TextBlock Text="{x:Static res:Strings.SubmittedReviews}" Grid.Column="1" Grid.Row="0" x:Name="lblSendReviews"/>
+        <ScrollViewer Grid.Column="1" Grid.Row="1" x:Name="scrlSentReviews" VerticalScrollBarVisibility="Hidden">
+            <StackPanel x:Name="stpSentReviews"></StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

@@ -1,0 +1,167 @@
+﻿<UserControl x:Class="PresentationLayer.AdDetailsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:res="clr-namespace:PresentationLayer.Resources"
+             xmlns:local="clr-namespace:PresentationLayer"
+             mc:Ignorable="d" 
+             Loaded="UserControl_Loaded"
+             d:DesignHeight="900" d:DesignWidth="1440">
+
+    <!-- Izradio: Ennio David Komljenović -->
+
+    <Grid Background="#D9D9D9">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Background="White" Width="650" Margin="10">
+                        <Image x:Name="pboAd" 
+           Stretch="Uniform" 
+           Margin="10"
+           MaxWidth="630"
+                            MaxHeight="400"
+                            HorizontalAlignment="Center"
+           VerticalAlignment="Center"/>
+                    </Border>
+
+
+                    <StackPanel Grid.Column="1" Orientation="Vertical" Margin="10">
+                        <Border Background="White" Margin="0,0,0,10">
+                            <StackPanel Orientation="Horizontal" Margin="10">
+                                <StackPanel Margin="10">
+                                    <Border Width="160" Height="160" Margin="0,10,0,10">
+                                        <Image x:Name="PFP" Stretch="Uniform"/>
+                                    </Border>
+                                    <Button Height="30" Width="150" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Foreground="White" Background="#008080" BorderBrush="Transparent" Content="{x:Static res:Strings.SendMessage}" x:Name="btnSendMessage" Click="btnSendMessage_Click">
+                                        <Button.Style>
+                                            <Style TargetType="Button">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="Button">
+                                                            <Border CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                                                            </Border>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </StackPanel>
+
+                                <StackPanel Margin="10" VerticalAlignment="Center">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label FontSize="14" Content="{x:Static res:Strings.User}" FontFamily="Segoe UI" FontWeight="Bold" />
+                                        <TextBlock FontFamily="Segoe UI" x:Name="txtUser" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label FontSize="14" Content="{x:Static res:Strings.AverageRating}" FontFamily="Segoe UI" FontWeight="Bold" />
+                                        <TextBlock FontFamily="Segoe UI" x:Name="txtRating" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label FontSize="14" Content="{x:Static res:Strings.Location}" FontFamily="Segoe UI" FontWeight="Bold" />
+                                        <TextBlock FontFamily="Segoe UI" x:Name="txtLocation" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                                    </StackPanel>
+                                    <Button Height="30" Width="150" Margin="0,92,0,0" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Foreground="White" Background="#008080" BorderBrush="Transparent" Content="{x:Static res:Strings.AddReview}" x:Name="btnAddReview" Click="btnAddReview_Click">
+                                        <Button.Style>
+                                            <Style TargetType="Button">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="Button">
+                                                            <Border CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                                                            </Border>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                        <Border Background="White" Margin="0,10,0,0">
+                            <StackPanel Margin="10">
+                                <Label FontSize="14" Content="{x:Static res:Strings.UserData}" FontFamily="Segoe UI" FontWeight="Bold" Margin="0,10,0,26" />
+                                <StackPanel Orientation="Horizontal">
+                                    <Label FontSize="14" Content="{x:Static res:Strings.Email}" FontFamily="Segoe UI" FontWeight="Bold" />
+                                    <TextBlock FontFamily="Segoe UI" x:Name="txtEmail" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                                    <Label FontSize="14" Content="{x:Static res:Strings.Contact}" FontFamily="Segoe UI" FontWeight="Bold" />
+                                    <TextBlock FontFamily="Segoe UI" x:Name="txtContact" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+
+                <Border Grid.Row="1" Grid.ColumnSpan="1" Background="White" Margin="10">
+                    <StackPanel Margin="10">
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Height="120">
+                            <DockPanel x:Name="galleryStrip" LastChildFill="False">
+                            </DockPanel>
+                        </ScrollViewer>
+
+
+                        <TextBlock x:Name="txtTitle" Height="60" FontSize="30" FontWeight="Bold" Margin="0,10,0,10"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Label FontSize="14" Content="{x:Static res:Strings.DescriptionLabel}" FontFamily="Segoe UI" FontWeight="Bold" />
+                            <TextBlock FontFamily="Segoe UI" x:Name="txtDescription" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label FontSize="14" Content="{x:Static res:Strings.Price}" FontFamily="Segoe UI" FontWeight="Bold" />
+                            <TextBlock FontFamily="Segoe UI" x:Name="txtPrice" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label FontSize="14" Content="{x:Static res:Strings.Status}" FontFamily="Segoe UI" FontWeight="Bold" />
+                            <TextBlock FontFamily="Segoe UI" x:Name="txtStatus" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label FontSize="14" Content="{x:Static res:Strings.AdNumber}" FontFamily="Segoe UI" FontWeight="Bold" />
+                            <TextBlock FontFamily="Segoe UI" x:Name="txtAdId" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        </StackPanel>
+
+                        <Button Height="30" Width="150" Click="AddToFavorites_Click" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Foreground="White" Background="#008080" BorderBrush="Transparent" Content="{x:Static res:Strings.AddToFavorites}" HorizontalAlignment="Left" Margin="0,10,0,0">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Button">
+                                                <Border CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </StackPanel>
+                </Border>
+
+                <ContentControl x:Name="ccUserReviews" Grid.Column="1" Grid.Row="2"/>
+            </Grid>
+        </ScrollViewer>
+
+        <Popup x:Name="popupAddReview" StaysOpen="False" Placement="Center">
+
+        </Popup>
+    </Grid>
+</UserControl>

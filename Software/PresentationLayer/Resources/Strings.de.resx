@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Anmeldung</value>
+  </data>
+  <data name="UsernameLabel" xml:space="preserve">
+    <value>Benutzername:</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>Passwort:</value>
+  </data>
+  <data name="LoginButton" xml:space="preserve">
+    <value>Anmelden</value>
+  </data>
+  <data name="FAQButton" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="SupportText" xml:space="preserve">
+    <value>Kundensupport</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>Benutzerprofil</value>
+  </data>
+  <data name="RecommendedSize" xml:space="preserve">
+    <value>Die empfohlene Größe beträgt 120 * 120 px, bis zu 250 kB</value>
+  </data>
+  <data name="RecommendedSizePart" xml:space="preserve">
+    <value>groß und im .jpg-, .png- oder .jpeg-Format.</value>
+  </data>
+  <data name="MyAds" xml:space="preserve">
+    <value>Meine Anzeigen</value>
+  </data>
+  <data name="MyReviews" xml:space="preserve">
+    <value>Meine Bewertungen</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-Mail:</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Kontak:</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Standort:</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Sprache:</value>
+  </data>
+  <data name="ChooseImage" xml:space="preserve">
+    <value>Bild auswählen</value>
+  </data>
+  <data name="SaveProfile" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="BasicInfo" xml:space="preserve">
+    <value>Grundlegende Informationen</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Bild:</value>
+  </data>
+  <data name="LanguageCroatian" xml:space="preserve">
+    <value>Kroatisch</value>
+  </data>
+  <data name="LanguageEnglish" xml:space="preserve">
+    <value>Englisch</value>
+  </data>
+  <data name="LanguageGerman" xml:space="preserve">
+    <value>Deutsch</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>Anmeldung</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Registrieren</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Senden</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Biberweise Anzeigen durchstöbern!</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Statistiken</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Favoriten</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Nachrichten</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Abmelden</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Benutzer:</value>
+  </data>
+  <data name="AverageRating" xml:space="preserve">
+    <value>Durchschnittsbewertung:</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>Nachricht senden</value>
+  </data>
+  <data name="UserData" xml:space="preserve">
+    <value>Benutzerdaten</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Preis:</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Zustand:</value>
+  </data>
+  <data name="AdNumber" xml:space="preserve">
+    <value>Anzeigennummer:</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Zu Favoriten hinzufügen</value>
+  </data>
+  <data name="LiteratureText" xml:space="preserve">
+    <value>Literatur</value>
+  </data>
+  <data name="SportText" xml:space="preserve">
+    <value>Sport</value>
+  </data>
+  <data name="MarketText" xml:space="preserve">
+    <value>Markt</value>
+  </data>
+  <data name="FurnitureText" xml:space="preserve">
+    <value>Möbel</value>
+  </data>
+  <data name="ClothesText" xml:space="preserve">
+    <value>Kleidung</value>
+  </data>
+  <data name="AddAd" xml:space="preserve">
+    <value>Fügen Sie eine Anzeige hinzu</value>
+  </data>
+  <data name="Recommended" xml:space="preserve">
+    <value>Für Sie empfohlen</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Inhalt</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Beschreibung:</value>
+  </data>
+  <data name="CategoryLabel" xml:space="preserve">
+    <value>Kategorie:</value>
+  </data>
+  <data name="PostAd" xml:space="preserve">
+    <value>Poste es</value>
+  </data>
+  <data name="Used" xml:space="preserve">
+    <value>Gebraucht</value>
+  </data>
+  <data name="AsNew" xml:space="preserve">
+    <value>Wie neu</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Neu</value>
+  </data>
+  <data name="Sold" xml:space="preserve">
+    <value>Verkauft</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titel:</value>
+  </data>
+  <data name="YouHaveToBeLoggedIn" xml:space="preserve">
+    <value>Sie müssen angemeldet sein, um eine Anzeige hinzuzufügen.</value>
+  </data>
+  <data name="UserNotLoggedIn" xml:space="preserve">
+    <value>Sie müssen dafür angemeldet sein.</value>
+  </data>
+  <data name="UserForbidSelfMessage" xml:space="preserve">
+    <value>Sie können sich nicht selbst eine Nachricht senden.</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>Werte:</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Absagen</value>
+  </data>
+  <data name="ReviewUser" xml:space="preserve">
+    <value>Bewerten den Benutzer</value>
+  </data>
+  <data name="ReviewDialogueTitle" xml:space="preserve">
+    <value>Benutzerbewertung</value>
+  </data>
+	<data name="AddReview" xml:space="preserve">
+    <value>Fügen Sie eine Bewertung hinzu</value>
+	  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Bearbeiten</value>
+  </data>
+  <data name="AdsFromAllCategories" xml:space="preserve">
+    <value>Anzeigen aus allen Kategorien</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Anwenden</value>
+  </data>
+  <data name="♥ Add to Favorites" xml:space="preserve">
+    <value>♥ Zu Favoriten hinzufügen</value>
+  </data>
+  <data name="SortByDefault" xml:space="preserve">
+    <value>Nach Standard sortieren</value>
+  </data>
+  <data name="SortByMostPopular" xml:space="preserve">
+    <value>Sortieren nach „Am beliebtesten“.</value>
+  </data>
+  <data name="SortByPriceAscending" xml:space="preserve">
+    <value>Sortieren Sie nach Preis aufsteigend</value>
+  </data>
+  <data name="SortByPriceDescending" xml:space="preserve">
+    <value>Nach Preis absteigend sortieren</value>
+  </data>
+  <data name="SortByNewest" xml:space="preserve">
+    <value>Sortieren nach „Neueste“.</value>
+  </data>
+  <data name="SortByOldest" xml:space="preserve">
+    <value>Sortieren nach „Älteste“.</value>
+  </data>
+  <data name="AllLocations" xml:space="preserve">
+    <value>Alle Standorte</value>
+  </data>
+  <data name="UpdateAnAd" xml:space="preserve">
+    <value>Aktualisieren Sie eine Anzeige</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Stornieren</value>
+  </data>
+  <data name="ReceivedReviews" xml:space="preserve">
+    <value>Bewertungen erhalten</value>
+  </data>
+  <data name="SubmittedReviews" xml:space="preserve">
+    <value>Bewertungen abgegeben</value>
+  </data>
+  <data name="TotalViews" xml:space="preserve">
+    <value>Gesamtansichten:</value>
+  </data>
+  <data name="AverageViews" xml:space="preserve">
+    <value>Durchschnittliche Aufrufe:</value>
+  </data>
+  <data name="ExportPDF" xml:space="preserve">
+    <value>Als PDF exportieren</value>
+  </data>
+  <data name="ViewsPerCategory" xml:space="preserve">
+    <value>Aufrufe pro Kategorie:</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategorie</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Ansichten</value>
+  </data>
+  <data name="YourFavoriteAds" xml:space="preserve">
+    <value>Ihre Favoriten:</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>✖ Entfernen</value>
+  </data>
+</root>

@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Prijava</value>
+  </data>
+  <data name="UsernameLabel" xml:space="preserve">
+    <value>Korisničko ime:</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>Lozinka:</value>
+  </data>
+  <data name="LoginButton" xml:space="preserve">
+    <value>Prijavi se</value>
+  </data>
+  <data name="FAQButton" xml:space="preserve">
+    <value>Česta pitanja</value>
+  </data>
+  <data name="SupportText" xml:space="preserve">
+    <value>Korisnička podrška</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>Korisnički profil</value>
+  </data>
+  <data name="RecommendedSize" xml:space="preserve">
+    <value>Preporučena veličina je 120 * 120 px, do 250 kB</value>
+  </data>
+  <data name="RecommendedSizePart" xml:space="preserve">
+    <value>veličine i .jpg, .png ili .jpeg formata.</value>
+  </data>
+  <data name="MyAds" xml:space="preserve">
+    <value>Moji oglasi</value>
+  </data>
+  <data name="MyReviews" xml:space="preserve">
+    <value>Moje recenzije</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Kontakt:</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Lokacija:</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Jezik:</value>
+  </data>
+  <data name="ChooseImage" xml:space="preserve">
+    <value>Odaberi sliku</value>
+  </data>
+  <data name="SaveProfile" xml:space="preserve">
+    <value>Spremi</value>
+  </data>
+  <data name="BasicInfo" xml:space="preserve">
+    <value>Osnovni podaci</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Slika:</value>
+  </data>
+  <data name="LanguageCroatian" xml:space="preserve">
+    <value>Hrvatski</value>
+  </data>
+  <data name="LanguageEnglish" xml:space="preserve">
+    <value>Engleski</value>
+  </data>
+  <data name="LanguageGerman" xml:space="preserve">
+    <value>Njemački</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>Registracija</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Registriraj se</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Pošalji</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Dabrovito pretraži oglase!</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Statistika</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Favoriti</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Poruke</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Odjava</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Korisnik: </value>
+  </data>
+  <data name="AverageRating" xml:space="preserve">
+    <value>Prosječna ocjena:</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>Pošalji poruku</value>
+  </data>
+  <data name="UserData" xml:space="preserve">
+    <value>Podaci korisnika</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Cijena:</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Stanje:</value>
+  </data>
+  <data name="AdNumber" xml:space="preserve">
+    <value>Broj oglasa:</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Dodaj u favorite</value>
+  </data>
+  <data name="LiteratureText" xml:space="preserve">
+    <value>Literatura</value>
+  </data>
+  <data name="SportText" xml:space="preserve">
+    <value>Sport</value>
+  </data>
+  <data name="MarketText" xml:space="preserve">
+    <value>Tržnica</value>
+  </data>
+  <data name="FurnitureText" xml:space="preserve">
+    <value>Namještaj</value>
+  </data>
+  <data name="ClothesText" xml:space="preserve">
+    <value>Odjeća</value>
+  </data>
+  <data name="AddAd" xml:space="preserve">
+    <value>Dodaj oglas</value>
+  </data>
+  <data name="Recommended" xml:space="preserve">
+    <value>Preporučeno za Vas</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Sadržaj</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Opis:</value>
+  </data>
+  <data name="CategoryLabel" xml:space="preserve">
+    <value>Kategorija:</value>
+  </data>
+  <data name="PostAd" xml:space="preserve">
+    <value>Objavite oglas</value>
+  </data>
+  <data name="Used" xml:space="preserve">
+    <value>Korišteno</value>
+  </data>
+  <data name="AsNew" xml:space="preserve">
+    <value>Kao novo</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="Sold" xml:space="preserve">
+    <value>Kupljeno</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Naslov:</value>
+  </data>
+  <data name="YouHaveToBeLoggedIn" xml:space="preserve">
+    <value>Morate biti prijavljeni da biste dodali oglas.</value>
+  </data>
+  <data name="UserNotLoggedIn" xml:space="preserve">
+    <value>Morate biti prijavljeni za to.</value>
+  </data>
+  <data name="UserForbidSelfMessage" xml:space="preserve">
+    <value>Ne smijete sami sebi poslati poruku.</value>
+  </data>
+	<data name="Grade" xml:space="preserve">
+    <value>Ocjena:</value>
+</data>
+
+  <data name="Delete" xml:space="preserve">
+    <value>Obriši</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Uredi</value>
+  </data>
+  <data name="AdsFromAllCategories" xml:space="preserve">
+    <value>Oglasi svih kategorija</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Primjeni</value>
+  </data>
+  <data name="♥ Add to Favorites" xml:space="preserve">
+    <value>♥ Dodaj u favorite</value>
+  </data>
+  <data name="SortByDefault" xml:space="preserve">
+    <value>Poredaj prema zadanom</value>
+  </data>
+  <data name="SortByMostPopular" xml:space="preserve">
+    <value>Poredaj po Najpopularnijem</value>
+  </data>
+  <data name="SortByPriceAscending" xml:space="preserve">
+    <value>Poredaj prema rastućoj cijeni</value>
+  </data>
+  <data name="SortByPriceDescending" xml:space="preserve">
+    <value>Poredaj silazno</value>
+  </data>
+  <data name="SortByNewest" xml:space="preserve">
+    <value>Poredaj po najnovijem</value>
+  </data>
+  <data name="SortByOldest" xml:space="preserve">
+    <value>Poredaj po najstarijem</value>
+  </data>
+  <data name="AllLocations" xml:space="preserve">
+    <value>Sve lokacije</value>
+  </data>
+  <data name="UpdateAnAd" xml:space="preserve">
+    <value>Ažuriraj oglas</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Ažuriraj</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Odustani</value>
+  </data>
+  <data name="ReviewUser" xml:space="preserve">
+    <value>Ocjeni korisnika</value>
+  </data>
+  <data name="ReviewDialogueTitle" xml:space="preserve">
+    <value>Ocjenjivanje korisnika</value>
+  </data>
+  <data name="AddReview" xml:space="preserve">
+    <value>Dodajte recenziju</value>
+	  </data>
+  <data name="ReceivedReviews" xml:space="preserve">
+    <value>Dobivene recenzije</value>
+  </data>
+  <data name="SubmittedReviews" xml:space="preserve">
+    <value>Poslane recenzije</value>
+  </data>
+  <data name="TotalViews" xml:space="preserve">
+    <value>Ukupno pregleda:</value>
+  </data>
+  <data name="AverageViews" xml:space="preserve">
+    <value>Prosječni broj pregleda:</value>
+  </data>
+  <data name="ExportPDF" xml:space="preserve">
+    <value>Izvezi u PDF</value>
+  </data>
+  <data name="ViewsPerCategory" xml:space="preserve">
+    <value>Broj pregleda po kategoriji:</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategorija</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Pregledi</value>
+  </data>
+  <data name="YourFavoriteAds" xml:space="preserve">
+    <value>Tvoji favoriti:</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>✖ Obriši</value>
+  </data>
+</root>
